@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Unata Contact form</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="respond" class="respond-request">
+    <img src="/assets/images/icon-success-check.svg">
+    <header>Message Sent!</header>
+    <p>Thanks for completing the form.We'll get in touch soon!</p>
+  </div>
+<div class="form-container">
+  <h2>Contact Unata</h2>
+   
+<form id="form"> 
+  <div class="first-last">
+    <div class="first"><p>First Name *</p>
+      <input class="input-firstname" id="first-name" type="text" placeholder="Enter first name">
+    <span class="span-message">This field is required</span>
+  </div>
+    <div class="last"><p>Last Name *</p> 
+      <input class="input-lastname" id="last-name" type="text" placeholder="Enter last name">
+      <span class="span-message">This field is required</span>
+    </div>
+    </div>
+
+<p>Email Address *</p>
+<input type="email" id="email" class="input-email" placeholder="Email Address">
+  <span class="span-message">Please enter a valid email adrress</span>
+  <p>Query Type *</p>
+  <div class="radio-container"><div class="radio">
+    <label><input type="radio" name="radio-click" value="option1"> General Enquiry</label></div>
+  <div class="radio">
+    <label><input type="radio" name="radio-click" value="option2"> Support Request</label>
+  </div></div>
+<span class="span-message">Please select a query type</span>
+ <p>Message *</p>
+ <textarea id="text-message"></textarea>
+  <span class="span-message">This field is required</span>
+
+  <label class="checkbox-label"><input type="checkbox" id="checkbox">I consent to being contacted by the team *
+   </label>
+  <span class="span-message">To submit this form please consent to being contacted</span>
+<button type="submit" id="submit">Submit</button>
+</form>
+</div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Unata kenneth</a>.
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
